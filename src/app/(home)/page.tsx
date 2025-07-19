@@ -27,7 +27,6 @@ export default function Home() {
                 <span className="bg-slate-500/20 hover:bg-[#f0eae7] inline-flex items-center translate-y-[3px] leading-[100%] gap-1 rounded-md px-1.5 py-1 ml-2 mr-2 hover:text-[#b88b59] transition-all duration-300 ease-in-out">Perk React UI</span>
                 <span className="bg-slate-500/20 hover:bg-[#f0eae7] inline-flex items-center translate-y-[3px] leading-[100%] gap-1 rounded-md px-1.5 py-1 ml-2 mr-2 hover:text-[#b88b59] transition-all duration-300 ease-in-out">PrimeWind</span>
               </p>
-
             </div>
 
             <div>
@@ -42,8 +41,8 @@ export default function Home() {
             <div>
               <p>Find me on:</p>
               <div className="flex space-x-5 mt-5">
-                <Link href="/" target="blank" className="flex gap-x-1 items-center"><Icon icon="ph:github-logo-duotone" className="size-5" />Github</Link>
-                <Link href="/" target="blank" className="flex gap-x-1 items-center"><Icon icon="ph:linkedin-logo-duotone" className="size-5" />Linkedin</Link>
+                <Link href="https://github.com/AE4041" target="blank" className="flex gap-x-1 items-center"><Icon icon="ph:github-logo-duotone" className="size-5" />Github</Link>
+                <Link href="https://www.linkedin.com/in/asamoah-emmanuel-489480161/" target="blank" className="flex gap-x-1 items-center"><Icon icon="ph:linkedin-logo-duotone" className="size-5" />Linkedin</Link>
               </div>
             </div>
 

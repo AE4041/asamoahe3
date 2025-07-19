@@ -36,9 +36,9 @@ export default function Navbar() {
                         <div className="flex-1 ltablet:flex-none lg:flex-none ltablet:ml-auto lg:ml-auto flex items-center ptablet:justify-end ltablet:justify-end lg:justify-end gap-4 sm:static">
                             <div className="relative p-1 rounded-full max-w-[104px] bg-gray-300">
                                 <div className="relative flex">
-                                    <div className="relative z-10 h-8 w-8 flex items-center justify-center">
+                                    <Link href="https://github.com/AE4041" target="blank" className="relative z-10 h-8 w-8 flex items-center justify-center">
                                         <Icon icon="ph:github-logo-duotone" />
-                                    </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
