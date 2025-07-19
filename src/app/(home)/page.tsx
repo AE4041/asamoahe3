@@ -9,7 +9,7 @@ export default function Home() {
       <div className="w-full max-w-4xl mx-auto">
         <div className="relative pb-20">
           <div className="pt-10 sm:pt-10 mb-8 space-y-8 text-gray-700">
-            <h1 className="prose text-gray-800 text-2xl font-medium">hey, I'm Emmanuel 👋</h1>
+            <h1 className="prose text-gray-800 text-2xl font-medium">hey, I&apos;m Emmanuel 👋</h1>
             <p>I&apos;m a fanatical frontend developer who loves working with Next.js, React,TypeScript and Tailwind.</p>
 
             <div className="space-y-2">

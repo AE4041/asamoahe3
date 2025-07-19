@@ -11,7 +11,7 @@ export default function Projects() {
                     <div className="pt-10 sm:pt-10 mb-8 space-y-5 text-gray-700">
                         <h1 className="prose text-gray-800 text-2xl font-medium">My projects</h1>
                         <p>
-                            Since 2021, I've designed and built several projects, including landing pages, e-commerce, and dashboards. Below are some key highlights from my projects.
+                            Since 2021, I&apos;ve designed and built several projects, including landing pages, e-commerce, and dashboards. Below are some key highlights from my projects.
                         </p>
 
                         <div className="grid sm:grid-cols-2 ltablet:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-6">
