@@ -1,4 +1,7 @@
+"use client"
 
+import Link from "next/link"
+import { ProjectData } from "./data"
 
 export default function Projects() {
     return (
@@ -12,53 +15,26 @@ export default function Projects() {
                         </p>
 
                         <div className="grid sm:grid-cols-2 ltablet:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-6">
-                            <div className="relative group">
-                                <div className="border border-gray-300 p-3 rounded-xl">
-                                    <div className="relative">
-                                        <img src="/images/curare.png" alt="" className="relative w-full h-64 bg-muted-100 dark:bg-muted-700/20 rounded-lg overflow-hidden group-hover:opacity-75 object-center object-cover transition-opacity duration-300" />
+                            {ProjectData.map((item, index) => (
+                                <Link href={item.url} target="blank" className="relative group" key={`${item.url} + ${index}`}>
+                                    <div className="border border-gray-300 p-3 rounded-xl">
+                                        <div className="relative">
+                                            <img src={item.imageUrl} alt="" className="relative w-full h-64 bg-muted-100 dark:bg-muted-700/20 rounded-lg overflow-hidden group-hover:opacity-75 object-center object-cover transition-opacity duration-300" />
+                                        </div>
+                                        <div className="mt-2">
+                                            <h3 className="font-medium text-lg capitalize text-gray-700 group-hover:text-primary-500 transition-colors duration-300">{item.title}</h3>
+                                            <p className="text-xs text-gray-500">{item.description}</p>
+                                            <div className="flex flex-wrap items-center gap-2 mt-3">
+                                                {item.tags?.map((tg, index) => (
+                                                    <span key={`tags-${tg}-${index}`} className="flex-none text-xs font-medium px-2 py-1 rounded-lg bg-orange-100 text-orange-500 ring-1 ring-inset">
+                                                        {tg}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="mt-2">
-                                        <h3 className="font-medium text-lg capitalize text-gray-700 group-hover:text-primary-500 transition-colors duration-300">Curare Pro Landing Page</h3>
-                                        <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et nemo nimium beatus est.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="relative group">
-                                <div className="border border-gray-300 p-3 rounded-xl">
-                                    <div className="relative">
-                                        <img src="/images/sedis.png" alt="" className="relative w-full h-64 bg-muted-100 dark:bg-muted-700/20 rounded-lg overflow-hidden group-hover:opacity-75 object-center object-cover transition-opacity duration-300" />
-                                    </div>
-                                    <div className="mt-2">
-                                        <h3 className="font-medium text-lg capitalize text-gray-700 group-hover:text-primary-500 transition-colors duration-300">Curare Pro Landing Page</h3>
-                                        <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et nemo nimium beatus est.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="relative group">
-                                <div className="border border-gray-300 p-3 rounded-xl">
-                                    <div className="relative">
-                                        <img src="/images/curare-pro.png" alt="" className="relative w-full h-64 bg-muted-100 dark:bg-muted-700/20 rounded-lg overflow-hidden group-hover:opacity-75 object-center object-cover transition-opacity duration-300" />
-                                    </div>
-                                    <div className="mt-2">
-                                        <h3 className="font-medium text-lg capitalize text-gray-700 group-hover:text-primary-500 transition-colors duration-300">Curare Pro Landing Page</h3>
-                                        <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et nemo nimium beatus est.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="relative group">
-                                <div className="border border-gray-300 p-3 rounded-xl">
-                                    <div className="relative">
-                                        <img src="/images/carevoucher.png" alt="" className="relative w-full h-64 bg-muted-100 dark:bg-muted-700/20 rounded-lg overflow-hidden group-hover:opacity-75 object-center object-cover transition-opacity duration-300" />
-                                    </div>
-                                    <div className="mt-2">
-                                        <h3 className="font-medium text-lg capitalize text-gray-700 group-hover:text-primary-500 transition-colors duration-300">Curare Pro Landing Page</h3>
-                                        <p className="text-xs text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et nemo nimium beatus est.</p>
-                                    </div>
-                                </div>
-                            </div>
+                                </Link>
+                            ))}
                         </div>
                     </div>
                 </div>

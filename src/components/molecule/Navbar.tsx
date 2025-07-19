@@ -11,7 +11,7 @@ interface NavLink {
 const navLinks: NavLink[] = [
     { title: "Home", path: "/" },
     { title: "Projects", path: "/projects" },
-    { title: "Experience", path: "/experience" }
+    // { title: "Experience", path: "/experience" }
 ]
 
 export default function Navbar() {
@@ -34,7 +34,7 @@ export default function Navbar() {
                         </div>
 
                         <div className="flex-1 ltablet:flex-none lg:flex-none ltablet:ml-auto lg:ml-auto flex items-center ptablet:justify-end ltablet:justify-end lg:justify-end gap-4 sm:static">
-                            <div className="relative p-1 rounded-full max-w-[104px] bg-gray-300">
+                            <div className="relative p-1 rounded-full max-w-[104px] bg-gray-300 hover:text-white hover:bg-gray-800 transition-colors duration-300">
                                 <div className="relative flex">
                                     <Link href="https://github.com/AE4041" target="blank" className="relative z-10 h-8 w-8 flex items-center justify-center">
                                         <Icon icon="ph:github-logo-duotone" />

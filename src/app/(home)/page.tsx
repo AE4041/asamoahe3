@@ -41,8 +41,12 @@ export default function Home() {
             <div>
               <p>Find me on:</p>
               <div className="flex space-x-5 mt-5">
-                <Link href="https://github.com/AE4041" target="blank" className="flex gap-x-1 items-center"><Icon icon="ph:github-logo-duotone" className="size-5" />Github</Link>
-                <Link href="https://www.linkedin.com/in/asamoah-emmanuel-489480161/" target="blank" className="flex gap-x-1 items-center"><Icon icon="ph:linkedin-logo-duotone" className="size-5" />Linkedin</Link>
+                <Link href="https://github.com/AE4041" target="blank" className="flex gap-x-1 items-center hover:text-gray-900 transition-colors duration-300">
+                  <Icon icon="ph:github-logo-duotone" className="size-5" />Github
+                </Link>
+                <Link href="https://www.linkedin.com/in/asamoah-emmanuel-489480161/" target="blank" className="flex gap-x-1 items-center hover:text-blue-500 transition-colors duration-300">
+                  <Icon icon="ph:linkedin-logo-duotone" className="size-5" />Linkedin
+                </Link>
               </div>
             </div>
 
