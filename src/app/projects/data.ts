@@ -27,14 +27,14 @@ export const ProjectData: ProjectDTO[] = [
         description: "A company of choice in the gold tailings processing and extraction sector in Ghana's mining industry.",
         url: "https://sedisplusgh.com/",
         imageUrl: "/images/sedis.png",
-        tags: ["Contract", "React", "Typescipt", "Tailwind"]
+        tags: ["Contract", "NextJs", "Typescipt", "Tailwind"]
     },
     {
         title: "Carevoucher",
         description: "A company of choice in the gold tailings processing and extraction sector in Ghana's mining industry.",
         url: "https://curare.info/carevoucher",
         imageUrl: "/images/carevoucher.png",
-        tags: ["Company-base", "React", "Typescipt", "Tailwind"]
+        tags: ["Company-base", "NextJS", "Typescipt", "Tailwind"]
     },
     {
         title: "Grace Phyto Clinic",
@@ -42,5 +42,12 @@ export const ProjectData: ProjectDTO[] = [
         url: "https://gracephytoclinic.com/?i=1",
         imageUrl: "/images/gracephyto.png",
         tags: ["Contract", "HTML", "CSS", "Javascript"]
+    },
+    {
+        title: "Crypto Dashboard",
+        description: "A simple dashboard for monitoring cryptocurrency prices and trends.",
+        url: "https://crypto-wallet-dashbaord.vercel.app/",
+        imageUrl: "/images/crypto.png",
+        tags: ["Personal Project", "React", "Javascript", "Tailwind", "Vercel"]
     }
 ]
