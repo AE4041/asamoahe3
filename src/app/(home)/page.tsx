@@ -10,7 +10,7 @@ export default function Home() {
         <div className="relative pb-20">
           <div className="pt-10 sm:pt-10 mb-8 space-y-8 text-gray-700">
             <h1 className="prose text-gray-800 text-2xl font-medium">hey, I'm Emmanuel 👋</h1>
-            <p>I'm a fanatical frontend developer who loves working with Next.js, React,TypeScript and Tailwind.</p>
+            <p>I&apos;m a fanatical frontend developer who loves working with Next.js, React,TypeScript and Tailwind.</p>
 
             <div className="space-y-2">
               <p>
@@ -32,7 +32,7 @@ export default function Home() {
             <div>
               <p>
                 As a React developer, I build interactive web experiences by transforming UI designs into fully functional code.
-                I leverage Tailwind utility‑first classes for responsive layouts and semantic HTML for clear, maintainable markup.
+                I leverage Tailwind utility first classes for responsive layouts and semantic HTML for clear, maintainable markup.
                 With a focus on performance and accessibility, I deliver production ready and scalable solutions.
                 Explore my <Link href="/projects" className="text-gray-900 font-medium underline">full project list here.</Link>
               </p>
